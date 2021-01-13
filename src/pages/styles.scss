@@ -1,0 +1,98 @@
+.dashboard {
+    margin-left: 30vh;
+    padding: 20px;
+}
+
+
+.header {
+    display: grid;
+    gap: 1.5rem;
+    padding: 20px;
+    height: 100%;
+    /* Explicit grid */
+    grid-template-areas: 'card1 . card2 card3';
+    grid-template-rows: repeat(3, 100%);
+    grid-template-columns: 8% auto 10% 6%;
+}
+
+.inner {
+    display: grid;
+    gap: 1.5rem;
+    height: 100%;
+    padding: 20px;
+    /* Explicit grid */
+    grid-template-areas: 'card4 . card5 card6';
+    grid-template-rows: repeat(3, 100%);
+    grid-template-columns: 16% auto 15% 7%;
+    margin-bottom: 20px;
+}
+
+.main {
+    display: grid;
+    gap: 2rem;
+    height: 100%;
+    padding: 20px;
+    /* Explicit grid */
+    grid-template-areas: 
+    'card7 card7 card8 card9' 
+    'card7 card7 card10 card11' 
+    'card12 card12 card13 card13' 
+    'card12 card12 card13 card13';
+    grid-template-rows: repeat(4, 15vh);
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.card1 {
+    grid-area: card1;
+    background-color: #D8D8D8;
+
+}
+.card2 {
+    grid-area: card2;
+    background-color: #D8D8D8;
+}
+.card3 {
+    grid-area: card3;
+    background-color: #D8D8D8;
+}
+.card4 {
+    grid-area: card4;
+    background-color: #D8D8D8;
+}
+.card5 {
+    grid-area: card5;
+    background-color: #D8D8D8;
+}
+.card6 {
+    grid-area: card6;
+    background-color: #D8D8D8;
+}
+.card7 {
+    grid-area: card7;
+    background-color: #D8D8D8;
+}
+.card8 {
+    grid-area: card8;
+    background-color: #D8D8D8;
+}
+.card9 {
+    grid-area: card9;
+    background-color: #D8D8D8;
+}
+.card10 {
+    grid-area: card10;
+    background-color: #D8D8D8;
+}
+.card11 {
+    grid-area: card11;
+    background-color: #D8D8D8;
+}
+.card12 {
+    grid-area: card12;
+    background-color: #D8D8D8;
+}
+.card13 {
+    grid-area: card13;
+    background-color: #D8D8D8;
+}

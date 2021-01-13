@@ -1,0 +1,86 @@
+.navbar {
+    background: #1D1D1D;
+    width: 28vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    overflow-y: scroll;
+}
+
+.wrapper {
+    width: 100%;
+    text-transform: capitalize;
+}
+
+.logo-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.avatar-wrapper {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.sidebar {
+    display: flex;
+    color: #D5D5D5;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-left: 50px;
+    list-style: none;
+    height: 30px;
+    text-decoration: none;
+    font-size: 16px;
+
+    &:hover {
+        background: rgb(39,39,39);
+        background: linear-gradient(90deg, rgba(39,39,39,1) 0%, rgba(55,55,55,1) 49%);
+        border-right: 6px solid #e4a42c;
+        cursor: pointer;
+    }
+}
+
+.navbar::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.profile{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo{
+    padding: 30px;
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    color: #E8E8E8;
+}
+
+.icons {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    font-size: 2rem;
+}
