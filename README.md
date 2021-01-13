@@ -1,5 +1,5 @@
-###INSTALATION
+##INSTALATION
 ```npm install```
 
-###RUNNING THE APPLICATION
+##RUNNING THE APPLICATION
 ```npm run start```
