@@ -1,11 +1,10 @@
 import React from 'react'
-import { DataSidebar } from './DataSidebar';
+import { DataSidebar } from '../../json/DataSidebar';
 import SideMenu from './SideMenu';
 import { IconContext } from 'react-icons/lib';
-
-import './styles.scss';
-import Logo from './Logo';
-import Avatar from './Avatar';
+import '../styles/styles.scss';
+import Logo from '../images/Logo';
+import Avatar from '../images/Avatar';
 
 export default function Sidebar() {
     return ( 
@@ -21,8 +20,8 @@ export default function Sidebar() {
                         <div className='avatar-wrapper'>
                             <Avatar/>
                         </div>
-                        {DataSidebar.map((item, index) => {
-                            return <SideMenu item={item} key={index}/>;
+                        {DataSidebar.map((item, index) => {                 ///MAPPING FROM MOKCUP JSON
+                            return <SideMenu item={item} key={index}/>;  
                         })}
                     </div>
                 </nav>
