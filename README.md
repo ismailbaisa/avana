@@ -1,8 +1,9 @@
 <p align="center">
 <img width="460" height="auto" src="https://i.imgur.com/lm6kYkE.png">
-<img width="460" height="auto" src="https://i.imgur.com/SvASy0d.png">
-<img width="460" height="auto" src="https://i.imgur.com/L1NCQ9l.jpg">
+<img width="200" height="auto" src="https://i.imgur.com/SvASy0d.png">
+<img width="200" height="auto" src="https://i.imgur.com/L1NCQ9l.jpg">
 </p>
+
 ## INSTALATION
 ```npm install```
 
