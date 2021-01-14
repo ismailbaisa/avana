@@ -108,6 +108,7 @@ h3 {
     text-decoration: none;
     color: #696666;
     font-size: 16px;
+    
     &:hover {
         background: rgb(39,39,39);
         background: linear-gradient(90deg, rgba(39,39,39,1) 0%, rgb(44, 44, 44) 49%);
@@ -130,8 +131,6 @@ h3 {
     font-size: 16x;
     pointer-events: none;
 }
-
-
 
 hr{
     margin-left: -1rem;
