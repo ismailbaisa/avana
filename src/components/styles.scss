@@ -102,7 +102,7 @@ h3 {
 
 .dropdown {
     height: 60px;
-    padding-left: 3rem;
+    padding-left: 4rem;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -117,7 +117,6 @@ h3 {
     }
     
 }
-
 
 .dropdown-disabled {
     display: flex;
@@ -135,6 +134,7 @@ h3 {
 
 
 hr{
+    margin-left: -1rem;
     margin-top: 15px;
     width: 100vw;
     height: 0.001rem;
