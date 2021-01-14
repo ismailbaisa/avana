@@ -3,18 +3,18 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import './styles.scss';
 
-export const SideMenu = ({item, display, toggler }) => {
+export const SideMenu = ({item, display, dispatch, menuid }) => {
     return (
         <>
             <div>
                 <div >{ item.isShowed &&
                     <Link className={ item.isAllowed ? 'sidebar' : 'side-disabled'} 
                         to={'/' + item.id} 
-                        onClick={ item.childs && item.isAllowed && toggler }>
-                            {item.id}
+                        onClick={() => dispatch({type: 'TOGGLER', payload: item.id})}>
+                            {item.id} 
                         <span className='icons'>
                             { 
-                                item.childs && display
+                                item.id === menuid && item.childs && display
                                 ? item.iconOpened
                                 : item.childs
                                 ? item.iconClosed
@@ -25,7 +25,7 @@ export const SideMenu = ({item, display, toggler }) => {
                     }
                 </div>
             </div>
-                { display && item.childs && item.isShowed &&
+                { display && item.childs && item.isShowed && item.id === menuid &&
                     item.childs.map((item, index) => {
                     return (
                         <div>
@@ -47,14 +47,10 @@ export const SideMenu = ({item, display, toggler }) => {
 
 const mapStateToProps = state => {
     return {
-        display: state.display
+        display: state.display,
+        menuid: state.menuid
     };
 };
 
-const mapDispatchToProps = dispatch => {
-    return {
-        toggler: () => dispatch({type: 'TOGGLER'})
-    };
-};
 
-export default connect(mapStateToProps, mapDispatchToProps)(SideMenu)
+export default connect(mapStateToProps)(SideMenu)
