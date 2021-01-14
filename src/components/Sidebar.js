@@ -1,7 +1,7 @@
 import React from 'react'
-import {DataSidebar} from './DataSidebar';
+import { DataSidebar } from './DataSidebar';
 import SideMenu from './SideMenu';
-import {IconContext} from 'react-icons/lib';
+import { IconContext } from 'react-icons/lib';
 
 import './styles.scss';
 import Logo from './Logo';

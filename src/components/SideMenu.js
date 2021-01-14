@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import './styles.scss';
 
-export const SideMenu = ({item, display, dispatch, menuid }) => {
+export const SideMenu = ({item, dispatch, menuid }) => {
     return (
         <>
             <div>
@@ -14,7 +14,7 @@ export const SideMenu = ({item, display, dispatch, menuid }) => {
                             {item.id} 
                         <span className='icons'>
                             { 
-                                item.id === menuid && item.childs && display
+                                item.id === menuid && item.childs 
                                 ? item.iconOpened
                                 : item.childs
                                 ? item.iconClosed
@@ -25,7 +25,7 @@ export const SideMenu = ({item, display, dispatch, menuid }) => {
                     }
                 </div>
             </div>
-                { display && item.childs && item.isShowed && item.id === menuid &&
+                { item.childs && item.isShowed && item.id === menuid &&
                     item.childs.map((item, index) => {
                     return (
                         <div>
@@ -33,7 +33,7 @@ export const SideMenu = ({item, display, dispatch, menuid }) => {
                                 <Link className="dropdown" to={item.id} key={index}>
                                     <div className={ item.isAllowed ? 
                                         "sub-sidebar" : "dropdown-disabled"}>
-                                        {item.id} 
+                                        {item.id.replace(/[^a-zA-Z0-9]/g, ' ')} 
                                         <hr/>
                                     </div>
                                 </Link>
@@ -47,7 +47,6 @@ export const SideMenu = ({item, display, dispatch, menuid }) => {
 
 const mapStateToProps = state => {
     return {
-        display: state.display,
         menuid: state.menuid
     };
 };
