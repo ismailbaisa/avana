@@ -1,11 +1,7 @@
 <p align="center">
-
-![avana](https://i.imgur.com/lm6kYkE.png) 
-
-![x](https://i.imgur.com/SvASy0d.png) 
-
-![@maingmeong](https://i.imgur.com/L1NCQ9l.jpg)
-
+<img width="460" height="300" src="https://i.imgur.com/lm6kYkE.png">
+<img width="460" height="300" src="https://i.imgur.com/SvASy0d.png">
+<img width="460" height="300" src="https://i.imgur.com/L1NCQ9l.jpg">
 </p>
 ## INSTALATION
 ```npm install```
