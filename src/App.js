@@ -25,7 +25,7 @@ function App() {
         <Route path='/products-product-variations' exact component={ variations } />
         <Route path='/products-product-collections' exact component={ collections } />
         <Route path='/webstore' exact component={ webstore } />
-        <Route path='/webstore-settings' exact component={ webstore } />
+        <Route path='/webstore-settings' exact component={ store } />
         <Route path='/webstore-settings' exact component={ settings } />
         <Route path='/webstore-google-analytic' exact component={ google } />
         <Route path='/webstore-themes' exact component={ themes } />
