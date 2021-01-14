@@ -6,8 +6,9 @@ function App() {
   return (
     <>
     <Router>
-      <Sidebar />
+      <Sidebar/>
       <Switch>
+      <Route path='/' exact component={ dashboard } />
         <Route path='/dashboard' exact component={ dashboard } />
       </Switch>
     </Router>

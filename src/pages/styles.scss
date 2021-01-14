@@ -3,7 +3,6 @@
     padding: 20px;
 }
 
-
 .header {
     display: grid;
     gap: 1.5rem;
@@ -43,56 +42,10 @@
 }
 
 
-.card1 {
-    grid-area: card1;
-    background-color: #D8D8D8;
+@for $i from 1 to 14 {
+	.card#{$i}{
+        grid-area: card#{$i};
+        background-color: #D8D8D8;
+	}
+}
 
-}
-.card2 {
-    grid-area: card2;
-    background-color: #D8D8D8;
-}
-.card3 {
-    grid-area: card3;
-    background-color: #D8D8D8;
-}
-.card4 {
-    grid-area: card4;
-    background-color: #D8D8D8;
-}
-.card5 {
-    grid-area: card5;
-    background-color: #D8D8D8;
-}
-.card6 {
-    grid-area: card6;
-    background-color: #D8D8D8;
-}
-.card7 {
-    grid-area: card7;
-    background-color: #D8D8D8;
-}
-.card8 {
-    grid-area: card8;
-    background-color: #D8D8D8;
-}
-.card9 {
-    grid-area: card9;
-    background-color: #D8D8D8;
-}
-.card10 {
-    grid-area: card10;
-    background-color: #D8D8D8;
-}
-.card11 {
-    grid-area: card11;
-    background-color: #D8D8D8;
-}
-.card12 {
-    grid-area: card12;
-    background-color: #D8D8D8;
-}
-.card13 {
-    grid-area: card13;
-    background-color: #D8D8D8;
-}
