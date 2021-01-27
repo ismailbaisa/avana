@@ -1,7 +1,6 @@
 import React from 'react'
 import '../styles/styles.scss';
 import { connect } from 'react-redux';
-import * as MdIcons from 'react-icons/md';
 
 export const Toggler = ({DataSidebar = [], dispatch}) => {
   return ( 
