@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import '../styles/styles.scss';
 
-export const SideMenu = ({item, dispatch, menuid }) => {
+export const SideMenu = ({item = [], dispatch, menuid }) => {
     return (
         <>
             <div>
@@ -48,6 +48,7 @@ export const SideMenu = ({item, dispatch, menuid }) => {
 const mapStateToProps = state => {
     return {
         menuid: state.menuid,
+        DataSidebar: state.DataSidebar
     };
 };
 

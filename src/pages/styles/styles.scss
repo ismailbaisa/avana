@@ -61,6 +61,18 @@
     font-size: 2rem;
 }
 
+.toggler {
+    color: black;
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    height: 90vh;
+    margin-left: 300px;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
 @media only screen and (max-width: 700px) {
     .pages {
         color: seashell;
@@ -128,4 +140,39 @@
     align-items: center;
     justify-content: center;
     font-size: 10rem;
+}
+
+
+//table
+table { 
+    background-color: seashell;
+    border-radius: 10%;
+    padding: 20px;
+    width: 100%; 
+    border-radius: 5px;
+  }
+  /* Zebra striping */
+  tr:nth-of-type(odd) { 
+    background: rgb(238, 208, 208); 
+  }
+  th { 
+    background: #EE651C; 
+    color: black; 
+    font-weight: bold; 
+  }
+  td, th { 
+    padding: 6px; 
+    border: 1px solid rgb(41, 39, 39); 
+    text-align: center;
+    vertical-align: middle;
+  }
+
+.on{
+    width: 90%;
+    background-color: rgb(125, 184, 125);
+}
+
+.off{
+    width: 90%;
+    background-color: rgb(245, 165, 165);
 }

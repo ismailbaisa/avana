@@ -1,12 +1,12 @@
 import React from 'react'
-import { DataSidebar } from '../../json/DataSidebar';
 import SideMenu from './SideMenu';
 import { IconContext } from 'react-icons/lib';
 import '../styles/styles.scss';
 import Logo from '../images/Logo';
+import { connect } from 'react-redux';
 import Avatar from '../images/Avatar';
 
-export default function Sidebar() {
+export const Sidebar = ({DataSidebar = []}) => {
     return ( 
         <> 
             <IconContext.Provider value={{
@@ -29,3 +29,10 @@ export default function Sidebar() {
         </>
     )
 }
+const mapStateToProps = state => {
+    return {
+        DataSidebar: state.DataSidebar,
+    };
+};
+
+export default connect(mapStateToProps)(Sidebar)

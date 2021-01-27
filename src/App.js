@@ -1,6 +1,7 @@
 import Sidebar from "./components/sidebar/index";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import dashboard from './pages/dashboard/index';
+import toggler from './pages/toggler/index';
 import orders from './pages/orders/index';
 import { products, allproducts, categories, variations, collections } from './pages/products/index';
 import { webstore, settings, google, themes, pages, seo } from './pages/webstore/index';
@@ -47,6 +48,7 @@ function App() {
         <Route path='/modules-blogspot' exact component={ blogspot } />
         <Route path='/modules-twitter' exact component={ twitter } />
         <Route path='/modules-whatsapp' exact component={ whatsapp } />
+        <Route path='/toggler' exact component={ toggler } />
       </Switch>
     </Router>
     </>
